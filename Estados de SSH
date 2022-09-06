@@ -1,0 +1,10 @@
+
+
+sudo /etc/init.d/ssh start
+
+sudo /etc/init.d/ssh stop
+
+sudo /etc/init.d/ssh status
+
+sudo /etc/init.d/ssh restart
+

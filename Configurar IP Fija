@@ -1,0 +1,72 @@
+----------------------------------------------
+PRIMERO REVISAMOS LA IP QUE NOS DA EL DHCP
+----------------------------------------------
+
+ ip add  o ifconfig 
+
+
+_____________________________________________________________________________
+
+LUEGO ENTRAMOS A ESTA RUTA 
+___________________
+
+____________________________________________________________________________
+sudo nano /etc/network/interfaces
+-------------------------------------------------------------------------------------------------------------------
+
+auto eth0
+iface eth0 inet static
+address 192.168.7.190
+netmask 255.255.255.0
+gateway 192.168.7.1
+network 192.168.7.0
+broadcast 192.168.7.255
+
+
+
+CONFIGURAMOS ESTO 
+
+
+Address: Es la dirección IP deseada.
+Netmask: Es la mascara de subred de la IP deseada.
+Gateway: Es la puerta de enlace, esto sirve para conectar con el router para poder tener Internet, una regla no escrita dice que la dirección IP 192.168.1.1 es para el router (las direcciones acabadas en 1).
+Network: Es la dirección de red en la que pertenece nuestra IP deseada.
+Broadcast Es la dirección de difusión de nuestra red.
+
+
+
+------------------------------------------------------------------------------------------------------------------
+Para que los cambios que hemos realizado se apliquen tenemos que reiniciar el servicio con este comando:
+____________________________________________________________________________
+sudo service networking restart
+
+sudo /etc/init.d/networking restart
+
+sudo ifconfig eth0 down
+sudo ifconfig eth0 up
+
+Y LISTO LA IP FIJA 
+_____________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

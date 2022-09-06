@@ -1,0 +1,42 @@
+PRIMER PASO SE CREA LA LLAVE PUBLICA 
+________________________________
+
+CREAS LA CLAVE 
+
+ssh-keygen
+
+__________________________________
+
+
+ LUEGO VERIFICAS QUE ESTE EN LA RUTA 
+ 
+ 
+danny@danny:~$ cd .ssh
+danny@danny:~/.ssh$ ls
+
+danny.pub  id_rsa  known_hosts
+
+llave publica = danny.pub
+
+llave privada = id_rsa
+
+conexion por ssh =known_hosts
+____________________________________
+
+ENVIAS LA LLAVE HACIA EL SERVIDOR 
+
+scp -r danny.pub desarrollo@192.168.5.121:/home/desarrollo
+
+
+___________________________________________
+
+DENTRO DEL SERVIDOR MODIFICAMOS EL ARCHIVO   
+
+
+desarrollo@DIRECTORIO:~$ nano .ssh/authorized_keys
+
+ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDDiaKtN+vToJg4lsEu6xWCowqNsenFNFOjKa8sDEx+deoXfu+PqUf2BBIlvFda3/7osXNg8GSC9Od9lxhz+itjzw5927US7u04LstJjnBLqWFpqaJs1tdq4Aeu/gWWFHu3Szx00Ni7lFYag8TE3IZD1/0fF7NbZ77jR2McAFcV6X+uKAPgh3IbS68FcHO17sASxaJXL18OebVz/HOB6D821qHnqjxPJkP1YN0eM03lHqoSJnUKFLgJSorhRZdRiZ/Vezbdhy2OcHaT2xlLWYmg016ijvrSf+VKPcPBqKNHKO9oDO4deZ8mknz/ujO5ihurAErhOWb4d1SWYR77whPWxlU4JHfB5iw+xi4R6GCrxfSiNdfTUryb5Hk1L1iKrI6VDexZVQOgx6zYJvglvqHC/KkRvWl0XTuBtf9pe9QJR22oqK1uXZHDc4p4iKZ2g4ZWj1qBOtcQcvpsRCuHYmUNQuYtR3qD7RC+WqABm9ObeJOKRqvdkOQCdZ9rwSuFvaM= danny@danny
+
+
+
+PEGAMOS LA LLAVE 

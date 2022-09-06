@@ -1,0 +1,18 @@
+-----------------------
+MYSQL ESTADOS 
+----------------------
+
+service mysql status
+
+service mysql stop
+
+service mysql start
+
+service mysql restart
+
+
+____________________________________________________________________________
+
+
+
+

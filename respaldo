@@ -1,0 +1,38 @@
+################################################################################################################################################################################>
+##################  CONFIGURACION DEL TERMINAL     #############################################################################################################################>
+################################################################################################################################################################################>
+################################################################################################################################################################################>
+##################  CONFIGURACION DEL TERMINAL     #############################################################################################################################>
+################################################################################################################################################################################>
+
+#toilet "MAQUILLAJE Y VESTUARIO" -f future --filter gay
+# Mod Terminal
+cowsay -f eyes   "DANNY JIMENEZ DESARROLLADOR WEB"
+echo
+toilet -f future Danny Jimenez --filter gay
+
+
+################################################################################################################################################################################>
+
+
+
+################################################################################################################################################################################>
+#################################  UNIDADES COMPARTIDAS   ######################################################################################################################>
+################################################################################################################################################################################>
+
+
+alias  montar-INTRANET-VIEJA='sshfs -o umask=007 usuariogit@172.16.12.188:// /home/danny/Unidades/INTRANET-VIEJA'
+alias  montar-INTRANET-NUEVA='sshfs -o umask=007 desarrollo@192.168.6.95:// /home/danny/Unidades/INTRANET-NUEVA'
+alias  montar-SERVIDOR-DESARROLLO='sshfs -o umask=007 desarrollo@192.168.5.120:// /home/danny/Unidades/SERVIDOR-DESARROLLO'
+alias  montar-DIRECTORIO='sshfs -o umask=007 desarrollo@192.168.5.121:// /home/danny/Unidades/DIRECTORIO'
+alias  montar-SERVICIO-MEDICO='sshfs -o umask=007 desarrollo@192.168.5.122:// /home/danny/Unidades/SERVICIO-MEDICO'
+alias  montar-GOBIERNO-BOLIVARIANO='sshfs -o umask=007 desarrollo@192.168.5.123:// /home/danny/Unidades/GOBIERNO-BOLIVARIANO'
+alias  montar-FESTIVAL-POESIA='sshfs -o umask=007 desarrollo@192.168.5.124:// /home/danny/Unidades/FESTIVAL-POESIA'
+alias  montar-MAQUILLAJE-VESTUARIO='sshfs -o umask=007 desarrollo@192.168.6.97:// /home/danny/Unidades/MAQUILLAJE-VESTUARIO'
+alias  montar-S.I.G.A.I='sshfs -o umask=007 desarrollo@192.168.6.25:// /home/danny/Unidades/S.I.G.A.I'
+alias  montar-SERVI-RED='sshfs -o umask=007 desarrollo@192.168.6.27:// /home/danny/Unidades/SERVI-RED'
+alias  montar-WIFI='sshfs -p 7987 desarrollo@192.168.6.10:// /home/danny/Unidades/WIFI'
+alias  montar-LOGISTICA='sshfs -p 7987 desarrollo@192.168.6.22:// /home/danny/Unidades/LOGISTICA'
+alias  montar-DESARROLLO-1='sshfs -o umask=007 desarrollo@172.16.15.12:// /home/danny/Unidades/DESARROLLO-1'
+alias  montar-DESARROLLO-2='sshfs -o umask=007 desarrollo@192.168.6.23:// /home/danny/Unidades/DESARROLLO-2'
+alias  montar-SIGESP='sshfs -o umask=007 sigesp-admin@172.16.13.156:/var/www/ /home/danny/Unidades/SIGESP/'
